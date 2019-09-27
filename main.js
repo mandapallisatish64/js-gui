@@ -1,4 +1,4 @@
-const add = (x, y) => { return x + y }
+const multiply = (x, y,z) => { return x * y * z }
 
 const validate = async (event) => {
   console.log(`triggered validate on ${event.target.id}`)
@@ -13,14 +13,14 @@ const validate = async (event) => {
 
 const updateWithAdd = async (event) => {
   document.querySelector('#result').innerHTML = ''
-  if (document.querySelector('#firstNumber').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
-    const regex = /[^a-zA-Z_]/g
-    const s = document.querySelector('#guest').value.replace(regex, '')
-    const i = parseInt(document.querySelector('#firstNumber').value)
-    const j = parseInt(document.querySelector('#secondNumber').value)
-    const ans = `${s}, your sum is ${add(i, j)}.`
+ // if (document.querySelector('#firstNumber').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
+   // const regex = /[^a-zA-Z_]/g
+    const s = parseInt(document.querySelector('#guest').value);
+    const i = parseInt(document.querySelector('#firstNumber').value);
+    const j = parseInt(document.querySelector('#secondNumber').value);
+    const ans = ` your sum is ${multiply(s,i, j)}.`
     document.querySelector('#result').innerHTML = ans
-  }
+ // }
 }
 
 const updateWithJoke = async (event) => {
