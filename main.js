@@ -18,7 +18,7 @@ const updateWithAdd = async (event) => {
     const s = parseInt(document.querySelector('#guest').value);
     const i = parseInt(document.querySelector('#firstNumber').value);
     const j = parseInt(document.querySelector('#secondNumber').value);
-    const ans = ` your sum is ${multiply(s,i, j)}.`
+    const ans = ` your volume is ${multiply(s,i, j)}.`
     document.querySelector('#result').innerHTML = ans
  // }
 }
