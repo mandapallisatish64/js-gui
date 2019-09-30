@@ -15,10 +15,10 @@ const updateWithAdd = async (event) => {
   document.querySelector('#result').innerHTML = ''
  // if (document.querySelector('#firstNumber').checkValidity() && document.querySelector('#secondNumber').checkValidity()) {
    // const regex = /[^a-zA-Z_]/g
-    const s = parseInt(document.querySelector('#guest').value);
-    const i = parseInt(document.querySelector('#firstNumber').value);
-    const j = parseInt(document.querySelector('#secondNumber').value);
-    const ans = ` your volume is ${multiply(s,i, j)}.`
+   // const s = parseInt(document.querySelector('#guest').value);
+    const city1 = document.querySelector('#firstNumber').value;
+    const city2 = document.querySelector('#secondNumber').value;
+    const ans = ` Number of characters in smalles string is ${Math.min(city1.length, city2.length)}.`
     document.querySelector('#result').innerHTML = ans
  // }
 }
