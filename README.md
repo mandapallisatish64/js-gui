@@ -4,8 +4,8 @@
 
 ## Links
 
-- [Demo](https://profcase.github.io/js-gui/)
-- [Source](https://github.com/profcase/js-gui)
+- [Demo](https://mandapallisatish64.github.io/js-gui/)
+- [Source](https://github.com/mandapallisatish64/js-gui)
 
 ## Requirements
 
